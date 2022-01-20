@@ -1,0 +1,155 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    box-sizing:border-box;
+}
+
+body{
+    background-color: #a2d2ff;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    min-height: 100vh;
+}
+
+ul {
+    list-style: none;
+
+}
+
+.pricing-header {
+    color:#016ff9; 
+    font-weight: 800;
+    letter-spacing: 0.2rem;
+}
+
+.panel{
+    margin:1rem;
+    padding:1.2rem;
+    background-color:white;
+    display:flex;
+    flex-direction:column;
+    border-radius:1rem;
+    gap:1rem;
+    width:100%;
+    max-width:120vh;
+    text-align:center;
+    text-transform: uppercase;
+}
+
+.pricing-plan {
+    display:flex;
+    flex-direction: column;;
+    width:100%;
+    align-items:center;
+}
+
+.pricing-plan:nth-of-type(-n+2){
+    border-bottom:1px solid #e6e6e6;
+}
+
+.pricing-img {
+    margin-bottom:2rem;
+    max-width:100%;
+}
+
+.pricing-features {
+    margin:1rem;
+    color:#59aaf7;
+    flex:1;
+}
+
+.pricing-features-item:nth-of-type(1){
+    border-top:1px solid #e6e6e6;
+
+}
+
+.pricing-features-item{
+    font-weight:600;
+    letter-spacing: 0.2rem;
+    font-size:0.8rem;
+    line-height: 1.5;
+    padding:0.5rem 0;
+    border-bottom:1px solid #e6e6e6;
+}
+
+.pricing-price{
+    display:block;
+    font-size:2rem;
+    font-weight: 1000;
+    color:#016ff9;
+    margin-bottom:1.5rem;
+}
+
+.pricing-button{
+    border:1px solid #59aaf7;
+    border-radius:0.5rem;
+    padding:0.8rem 2rem;
+    text-decoration: none;
+    font-weight:600;
+    font-size:0.8rem;
+    color:#59aaf7;
+    display:inline-block;
+    transition: background-color, 200ms ease-in-out
+}
+
+.pricing-button:hover,:focus     {
+    background-color: #59aaf7;
+    color:white;
+}
+
+@media (min-width: 528px){
+
+    .panel{
+        flex-direction:row;
+
+    }
+    .pricing-plan:nth-of-type(-n+2){ 
+        border-right:1px solid #e6e6e6;
+        border-bottom:none;
+    }
+
+
+}
