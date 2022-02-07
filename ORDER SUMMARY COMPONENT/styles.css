@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  /* PRIMARY */
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  /* NEUTRAL */
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Red Hat Display", sans-serif;
+  background-color: var(--pale-blue);
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 88%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  border-radius: 1.5rem;
+  background-color: var(--very-pale-blue);
+  max-width: 24rem;
+}
+
+.card-img {
+  width: 100%;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+}
+
+.card-title {
+  font-size: 1.38rem;
+  font-weight: 900;
+  color: var(--dark-blue);
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.card-description {
+  text-align: center;
+  font-size: 0.92rem;
+  color: var(--desaturated-blue);
+  padding: 0 2.299rem;
+  margin-top: 0.8rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+}
+
+.card-elements {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1.6rem;
+  background-color: var(--pale-blue);
+  border-radius: 1rem;
+  margin: 2rem 1.5rem;
+}
+
+.card-elements-plan div:nth-of-type(1) {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--dark-blue);
+  text-align: left;
+}
+.card-elements-plan div:nth-of-type(2) {
+  font-size: 0.9rem;
+  color: var(--desaturated-blue);
+}
+
+.card-link {
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 2rem;
+}
+
+.card-button {
+  background-color: var(--bright-blue);
+  color: var(--pale-blue);
+  padding: 1rem;
+  border-radius: 1rem;
+  font-weight: 900;
+  font-size: 0.96rem;
+  text-align: center;
+  margin: 0 1.5rem;
+  text-decoration: none;
+}
+
+.card-button-two {
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  font-weight: 900;
+  color: var(--desaturated-blue);
+  margin: 1.5rem 0;
+}
