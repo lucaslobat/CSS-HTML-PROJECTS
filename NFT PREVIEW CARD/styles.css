@@ -68,6 +68,11 @@ ul {
     
 }
 
+ul li img:first-child{
+    margin-right:0.2rem;
+
+}
+
 ul > li:nth-child(1){
     color:var(--cyan);
     font-weight:600;
@@ -84,6 +89,11 @@ ul > li:nth-child(1){
     border-radius: 50%;
     width:2.2rem;
     margin-right: 1rem;
+}
+
+.card-footer p span{
+    font-weight: 600;
+
 }
 
 @media (min-width:768px){
