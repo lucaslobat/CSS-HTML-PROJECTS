@@ -87,7 +87,6 @@ a:visited {
   gap: 2rem;
   width: 100%;
   color: var(--white);
-  margin-right: 1rem;
 }
 
 .container_section img {
@@ -181,4 +180,45 @@ a:visited {
   line-height: 1.6rem;
   color: var(--dark-blue);
   padding: 0rem 1rem 3.5rem;
+}
+
+.client__testimonials {
+  background-color: var(--white);
+}
+
+.client__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+.client__card h2 {
+  font-family: "Fraunces", sans-serif;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
+  margin: 2rem 0rem;
+  color: var(--grayish-blue);
+  font-weight: 900;
+}
+.client__card img {
+  border-radius: 50%;
+  max-width: 4.5rem;
+  margin: 2rem 0rem;
+}
+
+.client__card p {
+  color: var(--dark-grayish-blue);
+  font-size: 1.1rem;
+  line-height: 2rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.client__card h2:nth-of-type(2) {
+  color: var(--very-dark-desaturated-blue);
+  letter-spacing: 0;
+  text-transform: none;
+  font-weight: 900;
 }
