@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <script src="./script.js" defer></script>
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="styles.css">
   <title>Frontend Mentor | Sunnyside agency landing page</title>
@@ -13,16 +13,18 @@
 
     <!-- HEADER SECTION -->
     <div class="header">
-      <div class="navbar">
+      <div class="navbar flex">
         <img class="logo" src="images/logo.svg">
-
-        <div class="navbar-items">
-          <ul class="links">
+        
+        <button class="toggle-button-navbar">
+          <span class="sr-only">Menu</span>
+        </button>
+          
+        <ul class="links flex ">
             <li>About</li>
             <li>Services</li>
             <li>Projects</li>
           </ul>
-        </div>
         
       </div>
       <div class="heading_items">
@@ -131,6 +133,5 @@
     </footer>
     
 
- 
 </body>
 </html>
