@@ -271,16 +271,14 @@ footer {
 
 @media (max-width: 576px) {
   .links {
+    transform: translateX(100%);
     position: fixed;
     inset: 0 0 0 36%;
-    background: hsl(0 0% 0% / 0.3);
+    background: hsl(0 0% 0% / 0.5);
     flex-direction: column;
     padding: min(20vh, 10rem) 2rem;
     z-index: 1000;
-  }
-
-  .links {
-    display: none;
+    transition: transform 350ms ease;
   }
 
   .toggle-button-navbar {
@@ -294,7 +292,7 @@ footer {
   }
 
   .visible {
-    display: flex;
+    transform: translateX(0%);
   }
 }
 
